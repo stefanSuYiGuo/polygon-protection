@@ -1,7 +1,7 @@
 ## Installation
 
 ```
-pip install polygon_protection
+pip install polygon-protection
 ```
 
 ## Get Started
@@ -23,5 +23,6 @@ currency_pairs = [["AUD", "USD", [], portfolio("AUD", "USD")],
                   ["USD", "INR", [], portfolio("USD", "INR")]]
 
 # Run the main data collection loop
-PolygonProtection.main(currency_pairs=currency_pairs)
+polygon_connection = PolygonProtection()
+polygon_connection.main(currency_pairs=currency_pairs)
 ```
